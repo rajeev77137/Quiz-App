@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="createQuiz.css">
+</head>
+<body>
+    <div class="goback">
+        <a href="index.html">Go to home</a>
+    </div>
+    <div class="main">
+        <form id="createQuizForm">
+            <div>
+                <label for="quizName">Quiz Name:</label>
+                <input type="text" id="quizName" name="quizName" required>
+            </div>
+            <div id="questionsContainer">
+                <div class="question">
+                    <label for="question0">Question 1:</label>
+                    <input type="text" id="question0" name="question0" required>
+                    <div class="options">
+                        <label>Options:</label>
+                        <input type="text" name="question0_option0" required>
+                        <input type="text" name="question0_option1" required>
+                        <input type="text" name="question0_option2" required>
+                        <input type="text" name="question0_option3" required>
+                    </div>
+                    <label for="answer0">Correct Answer:</label>
+                    <input type="text" id="answer0" name="answer0" required>
+                </div>
+            </div>
+            <button type="button" id="addQuestionBtn">Add Another Question</button>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+    <script src="createQuiz.js"></script>
+</body>
+</html>
